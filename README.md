@@ -14,7 +14,7 @@ ionic cordova prepare ios
 
 ## Testing
 
-The background-geolocation should engage each time the device travels about 200 meters from its last known position, tracking the device for as long as the device remains in motion.  When the device stops in the same position for 5 minutes, the plugin will turn of location-updates and iOS will suspend the app in the background.
+The background-geolocation should engage each time the device travels about 200 meters from its last known position, tracking the device for as long as the device remains in motion.  When the device stops in the same position for 5 minutes, the plugin will turn off location-updates and iOS will suspend the app in the background.
 
 After launching the app the first time, and enabling the *Enabled Toggle*, you can terminate the app.
 
