@@ -2,7 +2,6 @@ import { Component, NgZone } from '@angular/core';
 import { Platform } from '@ionic/angular';
 
 import BackgroundGeolocation from "cordova-background-geolocation-lt";
-import BackgroundFetch from "cordova-plugin-background-fetch";
 
 @Component({
   selector: 'app-home',
@@ -20,6 +19,8 @@ export class HomePage {
 
   onReady() {
   	// Configure BackgroundFetch
+    let BackgroundFetch = (<any>window).BackgroundFetch;
+
   	BackgroundFetch.configure(() => {
   		console.log('[BackgroundFetch] received fetch event');
   		BackgroundFetch.finish();
