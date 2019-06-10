@@ -53,6 +53,7 @@ export class HomePage {
   	BackgroundGeolocation.ready({
   		reset: false,
   		debug: true,
+  		distanceFilter: 50,
   		logLevel: BackgroundGeolocation.LOG_LEVEL_VERBOSE,
   		stopOnTerminate: false
   	}).then((state) => {
